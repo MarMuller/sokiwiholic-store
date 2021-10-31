@@ -1,11 +1,11 @@
 import React from 'react';
-import Btns from './Header_Btns';
+import Btns from './NavBar_Btns';
 import './styles/reset-styles.css';
 import './styles/nav-style.css';
 import logo from './images/my-logo.svg';
 
 
-class Header extends React.Component {
+class NavBar extends React.Component {
   render() {
     return (
       <>
@@ -36,4 +36,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default NavBar;
