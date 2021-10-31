@@ -1,17 +1,9 @@
 import React from 'react';
+import Btns from './Header_Btns';
 import './styles/reset-styles.css';
 import './styles/nav-style.css';
 import logo from './images/my-logo.svg';
 
-// function Header(props) {
-//   return (
-//     <>
-//
-//     <h2>{props.nombre} {props.apellido}</h2>
-//
-//     </>
-//   );
-// }
 
 class Header extends React.Component {
   render() {
@@ -29,11 +21,11 @@ class Header extends React.Component {
 
           <div id="nav__menu" class="myButtons">
             <div class="nav__menu-list">
-              <a class="" href="index.html#block__sobremi">sobre mí</a>
-              <a class="" href="illustration.html">ilustración</a>
-              <a class="" href="graphic-design.html">diseño grafico</a>
-              <a class="" href="web-coding.html">web coding</a>
-              <a class="" href="index.html#block__contacto">contacto</a>
+              <Btns class="" url="#" content="sobre mí"/>
+              <Btns class="" url="#" content="ilustración"/>
+              <Btns class="" url="#" content="diseño grafico"/>
+              <Btns class="" url="#" content="web coding"/>
+              <Btns class="" url="#" content="contacto"/>
             </div>
           </div>
 
