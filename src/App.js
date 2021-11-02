@@ -1,5 +1,6 @@
 import './styles/App.css';
-import NavBar from './NavBar';
+import NavBar from './components/NavBar';
+import Cart from './components/Cart';
 
 
 function App() {
@@ -7,6 +8,12 @@ function App() {
     <>
 
     <NavBar/>
+
+    <div id="content_container">
+
+      <Cart/>
+
+    </div>
 
     </>
   );

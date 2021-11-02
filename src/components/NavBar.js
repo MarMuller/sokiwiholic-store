@@ -1,8 +1,8 @@
 import React from 'react';
 import Btns from './NavBar_Btns';
-import './styles/reset-styles.css';
-import './styles/nav-style.css';
-import logo from './images/my-logo.svg';
+import '../styles/main-styles.css';
+import '../styles/nav-style.css';
+import logo from '../assets/images/my-logo.svg';
 
 
 class NavBar extends React.Component {
