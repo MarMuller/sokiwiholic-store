@@ -11,7 +11,7 @@ class Item extends React.Component {
   }
 
   substract() {
-    if (this.state.counter > 1) {
+    if (this.state.counter > this.props.initial ) {
       this.setState({
         counter: this.state.counter -1
       });
