@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Cart_Counter';
 
 function Item(props) {
   return (
@@ -34,11 +35,7 @@ function Item(props) {
       <div class="columna-2">
 
         <div class="columna-2-grupo1">
-          <div class="item-cantidad">
-            <button type="button" name="button">-</button>
-            <input type="text" name="" value={props.quantity}/>
-            <button type="button" name="button">+</button>
-          </div>
+          <Counter/>
 
           <div class="item-precio">
             <span>${props.price}</span>
