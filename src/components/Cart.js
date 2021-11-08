@@ -4,8 +4,8 @@ import '../styles/main-styles.css';
 import '../styles/cart-style.css';
 
 let items=[
-{key:"1", image:"", name:"Zapatos rojos", description:"Lorem ipsum dolor", stock:"1", initial:"1", price:"1000"},
-{key:"2", image:"", name:"Vestido azul", description:"Lorem ipsum dolor", stock:"2", initial:"2", price:"1500"},
+{key:"1", image:"", name:"Zapatos rojos", description:"Lorem ipsum dolor", stock:"2", initial:"1", price:"1000"},
+{key:"2", image:"", name:"Vestido azul", description:"Lorem ipsum dolor", stock:"5", initial:"2", price:"1500"},
 {key:"3", image:"", name:"Anteojos de sol", description:"Lorem ipsum dolor", stock:"1", initial:"3", price:"300"},
 {key:"4", image:"", name:"Stickers", description:"Lorem ipsum dolor", stock:"20", initial:"4", price:"25"}
 ];
