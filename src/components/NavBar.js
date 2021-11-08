@@ -22,14 +22,14 @@ class NavBar extends React.Component {
 
           <div id="nav__menu" class="myButtons">
             <div class="nav__menu-list">
-              <Btns class="" url="#" content="sobre mí"/>
-              <Btns class="" url="#" content="ilustración"/>
-              <Btns class="" url="#" content="diseño grafico"/>
-              <Btns class="" url="#" content="web coding"/>
-              <Btns class="" url="#" content="contacto"/>
+              <Btns class="" url="/#" content="sobre mí"/>
+              <Btns class="" url="/#" content="ilustración"/>
+              <Btns class="" url="/#" content="diseño grafico"/>
+              <Btns class="" url="/#" content="web coding"/>
+              <Btns class="" url="/#" content="contacto"/>
 
-              <CartWidget class="nav-height-adjustment important-btn" url="#"/>
-            
+              <CartWidget class="nav-height-adjustment important-btn" url="/#"/>
+
             </div>
           </div>
 

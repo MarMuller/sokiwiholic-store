@@ -23,9 +23,9 @@ function Item(props) {
 
           <div class="item-acciones">
             <ul>
-              <li><a href="#">Eliminar</a></li>
-              <li><a href="#">Comprar ahora</a></li>
-              <li><a href="#">Guardar en favoritos</a></li>
+              <li><a href="/#">Eliminar</a></li>
+              <li><a href="/#">Comprar ahora</a></li>
+              <li><a href="/#">Guardar en favoritos</a></li>
             </ul>
           </div>
         </div>
