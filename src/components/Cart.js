@@ -10,13 +10,13 @@ let items=[
 {image:"", name:"Stickers", description:"Lorem ipsum dolor", stock:"20", initial:"1", price:"25"}
 ];
 
-var itemList = items.map(function(item, i) {
+let itemList = items.map(function(item, i) {
   return (
     <Item key={i} image={item.image} name={item.name} description={item.description} stock={item.stock} initial={item.initial}  price={item.price}/>
   )
 });
 
-//
+//miPromesa
 
 let listaOK = true;
 
@@ -32,12 +32,10 @@ let miPromesa = (time, task) => {
     })
 }
 
-miPromesa(0, console.log("Order received. Starting miPromesa..."))
-    .then(()=>miPromesa(3000, console.log("Artículo 1")))
-    .then(()=>miPromesa(2000, console.log("Artículo 2")))
-    .then(()=>miPromesa(1000, console.log("Artículo 3")))
-    .catch((err)=>console.log(err))
-    .finally(()=>console.log("Listo."));
+miPromesa( 2000, console.log("Creando lista de artículos..."))
+    .then( () => miPromesa( 2000, console.log(items) ) )
+    .catch( (err) => console.log(err))
+    .finally( () => console.log("Lista armada."));
 
 //
 
