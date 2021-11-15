@@ -16,14 +16,30 @@ var itemList = items.map(function(item, i) {
   )
 });
 
-// let itemList=[];
 //
-// for (var item of items) {
-//   itemList.push(
-//     <Item image={item.image} name={item.name} description={item.description} stock={item.stock} initial={item.initial} price={item.price}/>
-//   )
-// }
 
+let listaOK = true;
+
+let miPromesa = (time, task) => {
+    return new Promise((resolve, reject) => {
+        if (listaOK) {
+            setTimeout( () => {
+                resolve(task)
+            }, time)
+        } else {
+            reject("No hay articulos.")
+        }
+    })
+}
+
+miPromesa(0, console.log("Order received. Starting miPromesa..."))
+    .then(()=>miPromesa(3000, console.log("Artículo 1")))
+    .then(()=>miPromesa(2000, console.log("Artículo 2")))
+    .then(()=>miPromesa(1000, console.log("Artículo 3")))
+    .catch((err)=>console.log(err))
+    .finally(()=>console.log("Listo."));
+
+//
 
 class Cart extends React.Component {
   render() {
