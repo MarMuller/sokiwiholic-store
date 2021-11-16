@@ -30,23 +30,23 @@ class Item extends React.Component {
     return (
       <>
 
-      <div class="carrito__item">
+      <div className="carrito__item">
 
-        <div class="columna-1">
+        <div className="columna-1">
 
-          <div class="columna-1-grupo1">
-            <div class="item-img">
+          <div className="columna-1-grupo1">
+            <div className="item-img">
               <img src={this.props.image} alt=""/>
             </div>
           </div>
 
-          <div class="columna-1-grupo2">
-            <div class="item-descripcion">
+          <div className="columna-1-grupo2">
+            <div className="item-descripcion">
               <h3>{this.props.name}</h3>
               <span>{this.props.description}</span>
             </div>
 
-            <div class="item-acciones">
+            <div className="item-acciones">
               <ul>
                 <li><a href="/#">Eliminar</a></li>
                 <li><a href="/#">Comprar ahora</a></li>
@@ -57,22 +57,22 @@ class Item extends React.Component {
 
         </div>
 
-        <div class="columna-2">
+        <div className="columna-2">
 
-          <div class="columna-2-grupo1">
-            <div class="item-cantidad">
+          <div className="columna-2-grupo1">
+            <div className="item-cantidad">
               <button onClick={this.substract.bind(this)} type="button" name="button">
               -
               </button>
 
-              <input type="text" name="" value={this.state.counter}/>
+              <input type="text" name="" defaultValue={this.state.counter}/>
 
               <button onClick={this.add.bind(this)} type="button" name="button">
               +
               </button>
             </div>
 
-            <div class="item-precio">
+            <div className="item-precio">
               <span>${this.props.price}</span>
             </div>
           </div>

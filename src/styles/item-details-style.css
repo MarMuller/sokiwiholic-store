@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: #b56cb5;
+}
+
+#componente__item-detalle {
+  top: 50px;
+  margin: 20px;
+}
+
+.item-cantidad button {
+  width: 20px;
+  text-align: center;
+}
+
+.item-cantidad input {
+  width: 20px;
+  text-align: center;
+}
+
+.item-precio {
+  min-width: 50px;
+}
+
+.item-precio span {
+  font-weight: bold;
+  text-align: left;
+}

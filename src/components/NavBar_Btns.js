@@ -4,7 +4,7 @@ function Btns(props) {
   return (
     <>
 
-    <a class={props.class} href={props.url}>{props.content}</a>
+    <a className={props.class} href={props.url}>{props.content}</a>
 
     </>
   );
@@ -14,7 +14,7 @@ function Btns(props) {
 //   render() {
 //     return (
 //       <>
-//       <a class="" href="index.html#block__sobremi">sobre mí</a>
+//       <a className="" href="index.html#block__sobremi">sobre mí</a>
 //       </>
 //     )
 //   }

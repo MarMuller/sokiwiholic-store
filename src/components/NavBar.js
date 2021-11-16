@@ -20,15 +20,15 @@ class NavBar extends React.Component {
           </div>
 
 
-          <div id="nav__menu" class="myButtons">
-            <div class="nav__menu-list">
-              <Btns class="" url="/#" content="sobre mí"/>
-              <Btns class="" url="/#" content="ilustración"/>
-              <Btns class="" url="/#" content="diseño grafico"/>
-              <Btns class="" url="/#" content="web coding"/>
-              <Btns class="" url="/#" content="contacto"/>
+          <div id="nav__menu" className="myButtons">
+            <div className="nav__menu-list">
+              <Btns className="" url="/#" content="sobre mí"/>
+              <Btns className="" url="/#" content="ilustración"/>
+              <Btns className="" url="/#" content="diseño grafico"/>
+              <Btns className="" url="/#" content="web coding"/>
+              <Btns className="" url="/#" content="contacto"/>
 
-              <CartWidget class="nav-height-adjustment important-btn" url="/#"/>
+              <CartWidget className="nav-height-adjustment important-btn" url="/#"/>
 
             </div>
           </div>
