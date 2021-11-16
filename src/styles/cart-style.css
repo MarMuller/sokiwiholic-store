@@ -8,12 +8,10 @@ a {
   margin: 20px;
 }
 
-.item__details {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.carrito__item {
+  display: inline-block;
 
-  margin-bottom: 10px;
+  margin: 0 10px 10px 0;
   padding: 20px;
   background-color: #fff;
   color: grey;
@@ -21,70 +19,51 @@ a {
   border: 1px solid #d1d1d1;
 }
 
-.item__details .columna-1 {
+.carrito__item .columna-1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.item__details .columna-1 .columna-1-grupo1 {
-  margin-right: 20px;
+.carrito__item .columna-1 .columna-1-grupo1 {
+
 }
 
-.item__details .columna-2 .columna-2-grupo1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.item__details .columna-2 .columna-2-grupo1 .item-cantidad{
-  margin-right: 20px;
-}
-
-.item-img {
-  width: 50px;
-  height: 50px;
+.carrito__item .columna-1 .columna-1-grupo1 .item-img {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
   background-color: pink;
 }
 
-.item-descripcion {
-  margin-bottom: 10px;
+.carrito__item .columna-1 .columna-1-grupo1 img {
+
 }
 
-.item-descripcion h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
+.carrito__item .columna-1 .columna-1-grupo1 h3 {
+  margin: 10px 0;
+  font-weight: normal;
 }
 
-.item-descripcion span {
-  font-size: 14px;
-}
-
-.item-acciones ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.item-acciones ul li {
-  display: inline;
-  font-size: 12px;
-  margin-right: 10px;
-}
-
-.item-cantidad button {
-  width: 20px;
-  text-align: center;
-}
-
-.item-cantidad input {
-  width: 20px;
-  text-align: center;
-}
-
-.item-precio {
+.carrito__item .columna-1 .columna-1-grupo2 .item-precio {
   min-width: 50px;
 }
 
-.item-precio span {
+.carrito__item .columna-1 .columna-1-grupo2 .item-precio span {
   font-weight: bold;
   text-align: left;
+}
+
+.carrito__item .columna-1 .columna-1-grupo3 .item-cantidad {
+  margin: 10px 0;
+}
+
+.carrito__item .columna-1 .columna-1-grupo3 .item-cantidad button {
+  width: 20px;
+  text-align: center;
+}
+
+.carrito__item .columna-1 .columna-1-grupo3 .item-cantidad input {
+  width: 20px;
+  text-align: center;
 }

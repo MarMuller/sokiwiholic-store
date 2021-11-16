@@ -1,7 +1,7 @@
 import './styles/App.css';
 import NavBar from './components/NavBar';
-import Cart from './components/Cart';
-import ItemDetailsContainer from './components/Item_Details_Container';
+import Cart from './components/Cart_Container';
+import ItemDetailsComp from './components/Item_Details_Container';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 
     <div id="content_container">
 
-      <ItemDetailsContainer/>
+      <ItemDetailsComp/>
 
       <Cart/>
 

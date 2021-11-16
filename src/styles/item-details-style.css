@@ -8,7 +8,7 @@ a {
   margin: 20px;
 }
 
-.carrito__item {
+.item__details {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -21,70 +21,77 @@ a {
   border: 1px solid #d1d1d1;
 }
 
-.carrito__item .columna-1 {
+.item__details .columna-1 {
   display: flex;
   flex-direction: row;
 }
 
-.carrito__item .columna-1 .columna-1-grupo1 {
+.item__details .columna-1 .columna-1-grupo1 {
   margin-right: 20px;
 }
 
-.carrito__item .columna-2 .columna-2-grupo1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.carrito__item .columna-2 .columna-2-grupo1 .item-cantidad{
-  margin-right: 20px;
-}
-
-.item-img {
-  width: 50px;
-  height: 50px;
+.item__details .columna-1 .columna-1-grupo1 .item-img {
+  width: 200px;
+  height: 200px;
   background-color: pink;
 }
 
-.item-descripcion {
+.item__details .columna-1 .columna-1-grupo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item__details .columna-1 .columna-1-grupo2 .item-descripcion {
   margin-bottom: 10px;
 }
 
-.item-descripcion h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
+.item__details .columna-1 .columna-1-grupo2 .item-descripcion h3 {
+  margin-bottom: 10px;
 }
 
-.item-descripcion span {
+.item__details .columna-1 .columna-1-grupo2 .item-descripcion span {
   font-size: 14px;
 }
 
-.item-acciones ul {
+.item__details .columna-1 .columna-1-grupo2 .item-acciones ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.item-acciones ul li {
+.item__details .columna-1 .columna-1-grupo2 .item-acciones ul li {
   display: inline;
   font-size: 12px;
   margin-right: 10px;
 }
 
-.item-cantidad button {
+.item__details .columna-2 .columna-2-grupo1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.item__details .columna-2 .columna-2-grupo1 .item-cantidad{
+  margin-right: 20px;
+}
+
+
+.item__details .columna-2 .columna-2-grupo1 .item-cantidad button {
   width: 20px;
   text-align: center;
 }
 
-.item-cantidad input {
+.item__details .columna-2 .columna-2-grupo1 .item-cantidad input {
   width: 20px;
   text-align: center;
 }
 
-.item-precio {
+.item__details .columna-2 .columna-2-grupo1 .item-precio {
   min-width: 50px;
 }
 
-.item-precio span {
+.item__details .columna-2 .columna-2-grupo1 .item-precio span {
+  font-size: 20px;
   font-weight: bold;
   text-align: left;
 }

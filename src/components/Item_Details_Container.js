@@ -6,7 +6,7 @@ import '../styles/item-details-style.css';
 let itemSelected = {image:"", name:"Zapatos rojos", description:"Lorem ipsum dolor", stock:"2", initial:"1", price:"1000"};
 
 
-class ItemDetailsContainer extends React.Component {
+class ItemDetailsComp extends React.Component {
   render() {
     return (
       <>
@@ -22,4 +22,4 @@ class ItemDetailsContainer extends React.Component {
   }
 }
 
-export default ItemDetailsContainer;
+export default ItemDetailsComp;
