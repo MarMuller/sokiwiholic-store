@@ -4,23 +4,38 @@ import {items} from '../data/items_data';
 import '../styles/main-styles.css';
 import '../styles/cart-style.css';
 
+var dataOK = true;
+console.log(dataOK);
+
 //Creamos lista de artículos
-let itemList = items.map(function(item, i) {
+let itemList = items.map((item, i) => {
   return (
     <Item key={i} image={item.image} name={item.name} description={item.description} stock={item.stock} initial={item.initial}  price={item.price}/>
   )
 });
 
-//Cart-Promesa
-let cart_promise = require ("./Cart_Promise");
-
-cart_promise.cargarData(items)
-  .then((response) => {
-    setTimeout(() => {
-      console.log(response)
-    }, 2000);
+let cargarData = () => {
+  return new Promise ((resolve, reject) => {
+    if (dataOK) {
+        setTimeout(() => {
+            resolve(itemList)
+        }, 2000)
+    } else {
+        reject("No hay data.")
+    }
   })
-  .catch((err) => console.log(err));
+}
+
+let fetchingData = async () => {
+    try {
+        const result = await cargarData();
+        console.log(result);
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+fetchingData();
 
 
 //Cart

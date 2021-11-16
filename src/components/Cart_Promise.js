@@ -1,11 +1,5 @@
-export let cargarData = (data) => {
+import React from 'react';
+import Item from './Cart_Items';
+import {items} from '../data/items_data';
 
-  return new Promise ((resolve,reject) => {
-    if (data != null) {
-      resolve("Data cargada.");
-    } else {
-      reject("No hay data.")
-    }
-  });
-
-}
+export default cargarData;
