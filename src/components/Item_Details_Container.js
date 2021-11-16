@@ -1,9 +1,11 @@
 import React from 'react';
 import ItemDetails from './Item_Details';
+import {items} from '../data/items_data';
 import '../styles/main-styles.css';
 import '../styles/item-details-style.css';
 
-let itemSelected = {image:"", name:"Zapatos rojos", description:"Lorem ipsum dolor", stock:"2", initial:"1", price:"1000"};
+
+let itemSelected = items[0];
 
 
 class ItemDetailsComp extends React.Component {
