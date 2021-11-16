@@ -8,6 +8,68 @@ a {
   margin: 20px;
 }
 
+.carrito__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #fff;
+  color: grey;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+}
+
+.carrito__item .columna-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.carrito__item .columna-1 .columna-1-grupo1 {
+  margin-right: 20px;
+}
+
+.carrito__item .columna-2 .columna-2-grupo1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.carrito__item .columna-2 .columna-2-grupo1 .item-cantidad{
+  margin-right: 20px;
+}
+
+.item-img {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+
+.item-descripcion {
+  margin-bottom: 10px;
+}
+
+.item-descripcion h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.item-descripcion span {
+  font-size: 14px;
+}
+
+.item-acciones ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-acciones ul li {
+  display: inline;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
 .item-cantidad button {
   width: 20px;
   text-align: center;

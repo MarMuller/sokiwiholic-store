@@ -65,7 +65,7 @@ class Item extends React.Component {
               -
               </button>
 
-              <input type="text" name="" defaultValue={this.state.counter}/>
+              <input type="text" name="" value={this.state.counter} onChange={(event)=>this.inputChangedHandler(event)} />
 
               <button onClick={this.add.bind(this)} type="button" name="button">
               +

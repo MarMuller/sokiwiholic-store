@@ -32,23 +32,52 @@ class ItemDetails extends React.Component {
 
       <div className="item__details">
 
-        <img src={this.props.image} alt=""/>
-        <h3>{this.props.name}</h3>
-        <span>{this.props.description}</span>
+        <div className="columna-1">
 
-        <div className="item-cantidad">
-          <button onClick={this.substract.bind(this)} type="button" name="button">
-          -
-          </button>
+          <div className="columna-1-grupo1">
+            <div className="item-img">
+              <img src={this.props.image} alt=""/>
+            </div>
+          </div>
 
-          <input type="text" name="" defaultValue={this.state.counter}/>
+          <div className="columna-1-grupo2">
+            <div className="item-descripcion">
+              <h3>{this.props.name}</h3>
+              <span>{this.props.description}</span>
+            </div>
 
-          <button onClick={this.add.bind(this)} type="button" name="button">
-          +
-          </button>
+            <div className="item-acciones">
+              <ul>
+                <li><a href="/#">Eliminar</a></li>
+                <li><a href="/#">Comprar ahora</a></li>
+                <li><a href="/#">Guardar en favoritos</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
-        <span>${this.props.price}</span>
+        <div className="columna-2">
+
+          <div className="columna-2-grupo1">
+            <div className="item-cantidad">
+              <button onClick={this.substract.bind(this)} type="button" name="button">
+              -
+              </button>
+
+              <input type="text" name="" value={this.state.counter} onChange={(event)=>this.inputChangedHandler(event)} />
+
+              <button onClick={this.add.bind(this)} type="button" name="button">
+              +
+              </button>
+            </div>
+
+            <div className="item-precio">
+              <span>${this.props.price}</span>
+            </div>
+          </div>
+
+        </div>
 
       </div>
 
