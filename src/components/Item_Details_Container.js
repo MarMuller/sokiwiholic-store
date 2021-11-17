@@ -5,11 +5,25 @@ import '../styles/main-styles.css';
 import '../styles/item-details-style.css';
 
 
-let itemSelected = items[0];
+//
+var dataOK = true;
+let itemSelected = items[1];
+// console.log(itemSelected);
+
+
+const cargarData = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(itemSelected)
+  }, 2000);
+});
 
 
 class ItemDetailsComp extends React.Component {
+
+  cargarData;
+
   render() {
+
     return (
       <>
 

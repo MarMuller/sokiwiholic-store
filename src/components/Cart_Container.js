@@ -40,6 +40,7 @@ fetchingData();
 
 //Cart
 class Cart extends React.Component {
+
   render() {
     return (
       <>
